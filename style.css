@@ -10,7 +10,7 @@ body {
     max-width: 800px;
     background-color: var(--secondary-color);
     color: white;
-    font-family: 'Montserrat', sans-serif; /* Default font */
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
