@@ -11,7 +11,7 @@ body {
     background-color: var(--secondary-color);
     color: white;
     font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 header {
@@ -27,21 +27,29 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
+    margin: 10px 0;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
+    background-color: var(--accent-color);
+    transform: translateY(-3px);
 }
 
 .card {
@@ -64,6 +72,10 @@ nav ul li a:hover {
     border: none;
     border-radius: 5px;
     text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .button:hover {
@@ -91,30 +103,6 @@ h3 {
     transform: scale(1.1);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.navigation-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.navigation-links a {
-    margin: 1vw;
-    border-radius: 20px;
-    padding: 1.5vw 2.5vw;
-    background-color: var(--secondary-color);
-    color: white;
-    font-family: 'Lato', sans-serif;
-    text-decoration: none;
-    text-transform: uppercase;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.navigation-links a:hover {
-    background-color: var(--accent-color);
-    transform: translateY(-3px);
 }
 
 .email-link {
